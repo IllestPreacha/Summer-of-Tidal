@@ -1,3 +1,5 @@
+cps(30/60)
+
 d2 $ sound "[sn:3] [metal/3], [arpy/2 bd*2 arpy]"
 
 d3 $ sound "[bd sn metal can] [arpy], [bd can*3], [bd bd*3 sn cp]"
