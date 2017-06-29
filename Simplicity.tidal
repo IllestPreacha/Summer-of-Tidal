@@ -1,7 +1,12 @@
-cps(30/60)
+cps(60/60)
 
-d2 $ sound "[sn:3] [metal/3], [arpy/2 bd*2 arpy]"
+d2 $ every 3 rev $ sound "sn:3"
 
-d3 $ sound "[bd sn metal can] [arpy], [bd can*3], [bd bd*3 sn cp]"
+d4 $ sound "[metal/3], [arpy/2 bd*2 arpy]"
 
-d1 $ sound "[sn,sn] cp , arpy, [bd*4 hh cp sn]"
+d3 $ sound "[bd sn metal can] [arpy], [bd can*3], [bd bd*3 sn? cp]"
+# pan "[0.5, -0.7 0.1],- 0.5, 1"
+
+d1 $ iter 4 $ sound "[sn,sn] cp , arpy?, [bd*4 hh cp sn]"
+# gain "1 0.8 0.5 0.7"
+
