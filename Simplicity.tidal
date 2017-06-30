@@ -1,6 +1,6 @@
 cps(60/60)
 
-d2 $ every 3 rev $ sound "sn:3"
+d2 $ every 3 rev $ sound "sn:3, bd"
 
 d4 $ sound "[metal/3], [arpy/2 bd*2 arpy]"
 
