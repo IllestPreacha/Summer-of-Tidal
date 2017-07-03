@@ -1,0 +1,17 @@
+d1 $ sound " metal bd sn? cp"
+  |=| up "[0 1 2 3 4 5? 6 7 8]"
+  |+| up ( every 2 (rev) "[1 2 3 4 5 6? 7 8 1]")
+
+d2 $ sound "arpy:1 arpy:2? hh metal"
+  |=| vowel (every 3 (rev) "[a e i o? u]")
+  
+
+d3 $ every 3 (rev) (sound "hh*4 sn? sn bd")
+ |=| speed ("[1.5 0.4? 1 0.3? 2]"
+ |-| speed (every 4 (rev) "[0.5 0.1 -.2]")
+ 
+ hush
+
+-- solo helps to silence one section and help to tweak others 
+-- helps change the sound without having to retype good for live coding |+,-,*,=|
+-- when with in the straight lines brackets
