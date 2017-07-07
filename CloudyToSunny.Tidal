@@ -1,0 +1,52 @@
+d1 $ sound " metal bd sn? cp"
+  |=| up "[0 1 2 3 4 5? 6 7 8]"
+  |+| up ( every 2 (rev) "[1 2 3 4 5 6? 7 8 1]")
+  # lpf (scale 500 5000 sine)
+  # lpq 0.2
+  
+
+d2 $ sound "arpy:1 arpy:2? hh metal"
+  |=| vowel (every 3 (rev) "[a e i o? u]")
+  |+| up ( every 2 (rev) "[1 2 3 4 5 6? 7 8 1]")
+  |+| up ( every 2 (rev) "[1 2 3 4 5 6? 7 8 1]")
+  
+
+d3 $ every 3 (rev) (sound "hh*4 sn? sn bd")
+ |=| speed ("[1.5 0.4? 1 0.3? 2]")
+ |-| speed (every 4 (rev) "[0.2 0.8 2.7 1]")
+ # crush 5
+
+ d4 $ slow 2 $ striate 4 $ n "1 .. 4" # sound "alphabet"
+ |=| speed ("[1.5 0.4? 1 0.3? 2]")
+ # room "0 0.6 0.9"
+ # size "0 0.2 0.9"
+ # crush 9
+
+ d7 $ slow 2 $ iter 4 $ n "9 .. 12" # sound "alphabet"
+ |=| speed ("[1.5 0.4? 1 0.3? 2]")
+ 
+ # room "0 0.6 0.9"
+ # size "0 0.2 0.9"
+ # crush 9
+
+ d9 $ slow 2 $ chop 4 $ n "11 .. 14" # sound "alphabet"
+ |=| speed ("[1.5 0.4? 1 0.3? 2]")
+ # room "0 0.6 0.9"
+ # size "0 0.2 0.9"
+ # crush 9
+
+ d10 $ slow 2 $ chop 4 $ n "4 .. 7" # sound "alphabet"
+ |=| speed ("[1.5 0.4? 1 0.3? 2]")
+ # room "0 0.6 0.9"
+ # size "0 0.2 0.9"
+ # crush 9
+
+ d5 $ sound $ chop 4 "[ht/3], [arpy/2 bd*2 arpy]" 
+ # pan "0.5 - 0.5 0.7 _0.7"
+
+ d6 $ every 3 rev $ sound "sn:3 ~ bd (5,7)"
+ # room "0 0.6 0.9"
+ # pan "0.5 - 0.5 0.7 _0.7"
+ # size "0 0.2 0.9"
+
+ hush
